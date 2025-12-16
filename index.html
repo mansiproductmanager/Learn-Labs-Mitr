@@ -1,268 +1,129 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Roundglass Learn Labs | Fostering Learning & Wellbeing</title>
-    <style>
-      /* General Reset & Container */
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        color: #333;
-        background-color: #f8f8f8;
-      }
-      .container {
-        width: 90%;
-        max-width: 1200px;
-        margin: auto;
-      }
-      section {
-        padding: 40px 0;
-        border-bottom: 1px solid #eee;
-      }
-      h1,
-      h2 {
-        color: #004d40;
-      }
-      .pillar {
-        margin-bottom: 20px;
-      }
-      footer {
-        background-color: #333;
-        color: white;
-        text-align: center;
-        padding: 20px 0;
-        font-size: 0.9em;
-      }
-      footer a {
-        color: white;
-        text-decoration: none;
-        margin: 0 10px;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <title>Roundglass Foundation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      /* background: black; */
+      color: #17c652;
+      padding: 15px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 12px;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      padding: 60px 40px;
+      text-align: center;
+      color: #f15628;
+      background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+        url("https://rgfglobal.org/wp-content/themes/rgf/src/images/v2/foundation-dark.png")
+        center/cover no-repeat;
+    }
+    .hero h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    .sections {
+      padding: 20px;
+      display: grid;
+      gap: 15px;
+    }
+    .section {
+      background: white;
+      padding: 20px;
+      border-radius: 6px;
+    }
+    footer {
+      text-align: center;
+      padding: 12px;
+      font-size: 12px;
+      background: #000 !important;
+      color: #fff;
+    }
+    footer a{
+      color: #fff;
+    }
+  </style>
+</head>
 
-      /* Header Styling */
-      header {
-        background-color: white;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-      }
-      .header-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 0;
-      }
-
-      /* Logo Area (Added specific styling for the logo image) */
-      .logo a {
-        /* Removed font styling here as we are now using an image */
-        text-decoration: none;
-      }
-      .logo img {
-        height: 40px; /* Adjust size as needed for the header */
-        width: auto;
-        display: block;
-      }
-
-      /* Navigation */
-      nav ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        align-items: center;
-      }
-      nav ul li {
-        margin-left: 20px; /* Space between links */
-      }
-      nav ul li a {
-        color: #fff;
-        text-decoration: none;
-        font-weight: 500;
-        padding: 5px 0;
-        transition: color 0.2s;
-      }
-      nav ul li a:hover {
-        color: #004d40;
-      }
-
-      /* CTA Button */
-      .cta-button {
-        background-color: #14c54f; /* RGF Green for CTA */
-        color: white;
-        text-decoration: none;
-        padding: 8px 15px;
-        border-radius: 4px;
-        font-weight: bold;
-        transition: background-color 0.3s;
-      }
-      .cta-button:hover {
-        background-color: #14c54f;
-      }
-
-      /* Landing Cover */
-      .landing-cover {
-        width: 100%;
-        height: 400px;
-        overflow: hidden;
-      }
-      .landing-cover img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-      }
-    </style>
-  </head>
-  <body>
-    <header style="background-color: black; color: white">
-      <div class="container header-content">
-        <div class="logo">
-          <a href="#">
-            <img
-              src="https://roundglassfoundation.org/wp-content/themes/rgf/src/images/v2/RG-Giving-Logo.png"
-              alt="Roundglass Foundation Logo"
-            />
-          </a>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Our Work</a></li>
-            <li><a href="#">Impact</a></li>
-            <li><a href="#" class="cta-button">Donate Now</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <div class="landing-cover">
-      <img
-        src="https://res.cloudinary.com/roundglass/image/upload/f_auto,q_auto/v1762505374/roundglass/foundation/images/assets/community-model-banner.jpg"
-        alt="Roundglass Foundation Landing Page Banner"
-      />
-    </div>
-
-    <main>
-      <section id="mission" class="container">
-        <h2>Fostering Curiosity and Lifelong Learning</h2>
-        <p>
-          The Roundglass Learn Labs (RGF Global) is on a mission to ignite
-          curiosity and empower individuals through a hands-on, experimental
-          learning model. Our unique approach focuses on Wholistic Wellbeing by
-          creating immersive, co-owned learning environments that enable people
-          to explore new concepts and build skills for a brighter future,
-          primarily in underserved communities in Punjab, India.
-        </p>
-        <p>
-          We strive to create a vibrant learning ecosystem for rural growth,
-          encompassing the wellbeing of the individual's mind, creative spirit,
-          and ability to thrive in a changing world.
-        </p>
-      </section>
-      <section id="pillars" class="container">
-        <h2>Our Core Learning Pillars</h2>
-
-        <img
-          width="100%"
-          src="https://rgfglobal.org/wp-content/uploads/2022/01/jyoti-banner_m7uprk.jpg"
-          alt=""
-        />
-        <div class="pillar">
-          <h3>Curiosity & Critical Thinking</h3>
-          <p>
-            Designing and delivering experiential learning solutions (Learn
-            Labs) that move beyond rote memorization. We focus on fostering
-            cognitive flexibility, problem-solving skills, and a lifelong love
-            for inquiry and exploration through hands-on projects and open-ended
-            challenges.
-          </p>
-        </div>
-
-        <div class="pillar">
-          <h3>Skill Development & Future Readiness</h3>
-          <p>
-            Equipping youth and community members with relevant skills for the
-            21st-century economy. This includes digital literacy training,
-            entrepreneurial aptitude programs, and promoting foundational skills
-            like leadership, teamwork, and communication through structured
-            activities and mentorship.
-          </p>
-        </div>
-
-        <div class="pillar">
-          <h3>Wholistic Wellbeing Integration</h3>
-          <p>
-            Integrating physical, emotional, and social wellbeing into the
-            learning process. This includes using mediums like sports (e.g.,
-            Sports Centers, 1Girl1Football Program) to nurture discipline and
-            potential, and conducting awareness workshops on health and
-            self-care.
-          </p>
-        </div>
-      </section>
-      <section id="impact" class="container">
-        <h2>🚀 Learn Labs Impact: At a Glance</h2>
-        <img
-          width="100%"
-          src="https://roundglassfoundation.org/wp-content/uploads/2020/08/story3_hfjtnz_f5c10u.jpg"
-          alt=""
-        />
-        <p>
-          The Roundglass Learn Labs program has successfully driven significant
-          impact across rural Punjab by fostering curiosity and empowering
-          thousands of children and community members. Our efforts are
-          structured around three core areas: Empowering Learning Spaces,
-          Cultivating Future Readiness, and Integrating Wholistic Wellbeing. We
-          have established over 500 Learn Labs and integrated Sports Centers
-          which function as vital hubs for experiential, project-based learning.
-          These centres provide daily access to specialized resources, engaging
-          over 10,000 students in immersive programs focused on STEM, arts, and
-          critical thinking. Beyond academic support, our future-readiness
-          initiatives have enabled over 2,500 community members to complete
-          digital literacy and entrepreneurial skill development programs,
-          actively bridging the rural-urban skill divide. Furthermore, we ensure
-          comprehensive growth through wellbeing integration, with over 3,000
-          adolescent girls participating in the 1Girl1Football Program and
-          hundreds of workshops dedicated to health, hygiene, and mental
-          resilience, all working to foster confidence, teamwork, and overall
-          growth.
-        </p>
-      </section>
-    </main>
-
-    <footer>
-      <div class="container">
-        <p>&copy; Copyright Roundglass Foundation. All Rights Reserved.</p>
-        <p>
-          <a href="#">Contact Us</a> | <a href="#">Terms of Use</a> |
-          <a href="#">Financials</a>
-        </p>
-      </div>
-    </footer>
-    <script type="text/javascript">
-      (function (d, t) {
-        var v = d.createElement(t),
-          s = d.getElementsByTagName(t)[0];
-        v.onload = function () {
+<body>
+  <script type="text/javascript">
+    (function(d, t) {
+        var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        v.onload = function() {
           window.voiceflow.chat.load({
-            verify: { projectID: "692946319b2fa3d0af4b9e19" },
-            url: "https://general-runtime.voiceflow.com",
-            versionID: "production",
+            verify: { projectID: '693fc95bb832da7413584bf6' },
+            url: 'https://general-runtime.voiceflow.com',
+            versionID: 'production',
             voice: {
-              url: "https://runtime-api.voiceflow.com",
-            },
+              url: "https://runtime-api.voiceflow.com"
+            }
           });
-        };
-        v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs";
-        v.type = "text/javascript";
-        s.parentNode.insertBefore(v, s);
-      })(document, "script");
-    </script>
-  </body>
+        }
+        v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+    })(document, 'script');
+  </script>
+  <!-- Navigation -->
+  <header>
+    <img src="https://rgfglobal.org/wp-content/themes/rgf/src/images/v2/foundation-dark.png" alt="Roundglass logo" style="width:300px;height:auto;object-fit:contain;" />
+    <div style="margin-top:8px;font-weight:bold;letter-spacing:0.2px;color:#17c652;">Wholistic wellbeing, now conversational.</div>
+  </header>
+
+  <main style="padding:32px;">
+    <section style="max-width:1080px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;">
+      <div style="background:white;border-radius:12px;box-shadow:0 20px 45px rgba(0,0,0,0.12);padding:28px;border:1px solid rgba(23,198,82,0.18);">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px;">
+          <!-- <img src="https://rgfglobal.org/wp-content/themes/rgf/src/images/v2/foundation-dark.png" alt="Roundglass logo" style="width:160px;height:auto;object-fit:contain;" /> -->
+          <span style="padding:6px 10px;border-radius:999px;background:rgba(23,198,82,0.12);color:#17c652;font-weight:bold;font-size:12px;">    चैटबॉट डेमो
+          </span>
+        </div>
+        <h2 style="margin:0 0 12px;font-size:24px;color:#0f7c3a;"> राउंडग्लास केयर से जुड़े किसी भी सवाल के लिए पूछें</h2>
+        <p style="margin:0 0 18px;line-height:1.6;color:#3a4b3f;"> स्वास्थ्य और वित्त से जुड़े सवालों की जानकारी आसान भाषा में प्राप्त करें</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:14px;">
+          <span style="padding:10px 14px;border-radius:10px;background:rgba(23,198,82,0.08);color:#0f7c3a;font-weight:bold;">स्वास्थ्य कार्यक्रम</span>
+          <span style="padding:10px 14px;border-radius:10px;background:rgba(23,198,82,0.08);color:#0f7c3a;font-weight:bold;">स्वयंसेवा</span>
+          <span style="padding:10px 14px;border-radius:10px;background:rgba(23,198,82,0.08);color:#0f7c3a;font-weight:bold;">सामाजिक प्रभाव
+          </span>
+          <span style="padding:10px 14px;border-radius:10px;background:rgba(23,198,82,0.08);color:#0f7c3a;font-weight:bold;">साझेदारियां</span>
+        </div>
+        <button onclick="window.voiceflow.chat.open()" style="padding:14px 18px;border:none;border-radius:10px;background:#17c652;color:white;font-weight:bold;cursor:pointer;box-shadow:0 12px 20px rgba(23,198,82,0.25);">Launch chat</button>
+      </div>
+
+      <div style="position:relative;">
+        <div style="overflow:hidden;border-radius:14px;box-shadow:0 20px 45px rgba(0,0,0,0.16);border:1px solid rgba(0,0,0,0.06);">
+          <img src="https://roundglassfoundation.org/wp-content/uploads/2022/11/Rajender-Kaur_tcjclq.jpg" alt="Roundglass community" style="width:100%;display:block;object-fit:cover;max-height:520px;">
+        </div>
+        <div style="position:absolute;bottom:14px;left:14px;background:rgba(0,0,0,0.72);color:white;padding:14px 16px;border-radius:12px;backdrop-filter:blur(6px);max-width:80%;">
+          <strong>Real impact</strong><br />
+          Hear stories, ask about initiatives, and discover how to join in.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // Keep chat accessible from CTA
+    document.addEventListener('keydown', function(e) {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        window.voiceflow?.chat?.open();
+      }
+    });
+  </script>
+</body>
 </html>
